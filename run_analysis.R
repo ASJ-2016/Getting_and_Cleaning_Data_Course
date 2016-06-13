@@ -17,13 +17,11 @@
 
 require(data.table)
 require(plyr)
-# require(reshape2)
 
 
 # Clear the environment to ensure that everything is defined and set the wd
 rm(list=ls(all=TRUE))
 setwd(paste0(COURSERADIR, "./03 - Data Cleaning/Quizes and Assigments"))
-
 
 
 # Download and unzip the data
@@ -34,14 +32,12 @@ if(!file.exists(file)){ download.file(url, file)}
 if(!file.exists(folder)){ unzip(file, list = FALSE, overwrite = TRUE)}  
 
 
-
 # Read the files using "data.table" package
 list.files(folder, recursive=TRUE)
 
 # The files that will be used to load data are:
 # test: subject_test.txt, X_test.txt, y_test.txt
 # train: subject_train.txt, X_train.txt, y_train.txt
-
 
     # Subject files
     dtSubjTrain <- fread(file.path(folder, "train", "subject_train.txt"))
@@ -57,7 +53,6 @@ list.files(folder, recursive=TRUE)
     dtFeatTest  <- fread(file.path(folder, "test" , "X_test.txt" ))
     dtFeatNames <- fread(file.path(folder, "features.txt"))$V2
     
-    # dtFeatNames <- as.character(fread(file.path(folder, "features.txt"))$V2)
 
 # 1. Merges the training and the test sets to create one data set.    
  
