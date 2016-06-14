@@ -66,6 +66,9 @@ The files that will be used are:
 	* activity_labels.txt (6 activities)
 	* features.txt (561 features)
 
+## Code
+
+Please, to follow how is everything done, please see the "Run_analysis.R" file which is commented to easy follow the step by step process.
 
 ## Original Dataset
 
