@@ -55,16 +55,16 @@ You should create one R script called run_analysis.R that does the following.
 
 The files that will be used are: 
 * Test (9 of 30 volunteers): 
-	** subject_test.txt (2947  integers related to each obs in  X_train.txt)
-	** y_test.txt (2947  integers related to each obs in  X_train.txt)
-	** X_test.txt (2947 obs of the 561 features)
+	* subject_test.txt (2947  integers related to each obs in  X_train.txt)
+	* y_test.txt (2947  integers related to each obs in  X_train.txt)
+	* X_test.txt (2947 obs of the 561 features)
 * Train (21 of 30 volunteers): 
-	** subject_train.txt (7352 integers related to each obs in  X_train.txt)
-	** y_train.txt (7352 integers related to each obs in  X_train.txt) 
-	** X_train.txt (7352 obs of the 561 features)
+	* subject_train.txt (7352 integers related to each obs in  X_train.txt)
+	* y_train.txt (7352 integers related to each obs in  X_train.txt) 
+	* X_train.txt (7352 obs of the 561 features)
 * Lables and names: 
-	** activity_labels.txt (6 activities)
-	** features.txt (561 features)
+	* activity_labels.txt (6 activities)
+	* features.txt (561 features)
 
 
 ## Original Dataset
